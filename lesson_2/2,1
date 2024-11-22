@@ -1,0 +1,6 @@
+a = int(input())
+first_num = a // 1000
+second_num = (a // 100) % 10
+third_num = (a // 10) % 10
+fourth_num = a % 10
+print(first_num, second_num, third_num,fourth_num, sep='\n')
