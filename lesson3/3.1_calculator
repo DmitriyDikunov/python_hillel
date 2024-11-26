@@ -1,0 +1,13 @@
+a = int(input("перше число: "))
+b = int(input("друге число: "))
+char = input("Введіть дію: + - * /: ")
+if char == '+':
+    print(f"{a}+{b}={a+b}")
+elif char == '-':
+    print(f"{a}-{b}={a-b}")
+elif char == '*':
+    print(f"{a}*{b}={a*b}")
+elif char == '/' and b != 0:
+    print(f"{a}/{b}={a/b}")
+elif char == '/' and b == 0:
+    print("Ділення на нуль!")
