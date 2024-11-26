@@ -1,0 +1,10 @@
+my_list = []
+first_part = []
+second_part = []
+if len(my_list) % 2 == 0:
+    first_part.append(my_list[0:(len(my_list) // 2)])
+    second_part.append(my_list[(len(my_list)) // 2:])
+if len(my_list) % 2 == 1:
+    first_part.append(my_list[0:((len(my_list) // 2) + 1)])
+    second_part.append(my_list[((len(my_list)) // 2)+1:])
+print(first_part+second_part)
