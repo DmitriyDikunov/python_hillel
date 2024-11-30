@@ -1,0 +1,11 @@
+my_list = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+new_list = []
+zero_list = []
+for i in my_list:
+    if i != 0:
+        new_list.append(i)
+    else:
+        zero_list.append(i)
+
+new_list = new_list + zero_list
+print(new_list)
