@@ -1,0 +1,9 @@
+import string
+
+
+string_letter = string.ascii_letters
+letters = input()
+a, b = letters.split('-')
+start = string_letter.index(a)
+end = string_letter.index(b)
+print(string_letter[start:end+1])
