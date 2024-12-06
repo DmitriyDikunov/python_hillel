@@ -1,0 +1,21 @@
+import string, keyword
+
+
+text = input()
+if text.count('_') > 1:
+    print(False)
+elif text in keyword.kwlist:
+    print(False)
+elif text[0] in '0123456789':
+    print(False)
+else:
+    flag = True
+    for i in text:
+        if i in 'QWERTYUIOPASDFGHJKLZXCVBNM':
+            flag = False
+            break
+        elif i in string.punctuation and i != '_':
+            flag = False
+            break
+
+    print(flag)
