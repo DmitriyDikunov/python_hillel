@@ -1,0 +1,16 @@
+import string
+
+text = input()
+text = text.title()
+for i in text:
+    if i in string.punctuation:
+        text = text.replace(i, "")
+    else:
+        text = text.replace(" ", "")
+improved_text = ('#'+text)
+if len(improved_text) > 140:
+    improved_text = improved_text[:140]
+    print(improved_text)
+else:
+    print(improved_text)
+
