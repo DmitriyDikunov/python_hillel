@@ -8,6 +8,8 @@ elif text in keyword.kwlist:
     print(False)
 elif text[0] in '0123456789':
     print(False)
+elif " " in text:
+    print(False)
 else:
     flag = True
     for i in text:
