@@ -3,6 +3,16 @@ if 8640000 >= seconds >= 0:
     minutes = divmod(seconds, 60)
     hours = divmod(minutes[0], 60)
     days = divmod(hours[0], 24)
-    print(f'{days[0]} дні, {days[1]:02}:{hours[1]:02}:{minutes[1]:02}')
+
+    if 11 <= days[0] % 100 <= 19:
+        word = "днів"
+    elif days[0] % 10 == 1:
+        word = "день"
+    elif 2 <= days[0] % 10 <= 4:
+        word = "дня"
+    else:
+        word = "днів"
+
+    print(f'{days[0]} {word}, {days[1]:02}:{hours[1]:02}:{minutes[1]:02}')
 else:
     print(False)
