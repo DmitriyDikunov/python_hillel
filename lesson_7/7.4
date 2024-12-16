@@ -1,0 +1,7 @@
+def common_elements():
+    first = [i for i in range(101) if i % 3 == 0]
+    second = [i for i in range(101) if i % 5 == 0]
+    return set(first).intersection(set(second))
+
+
+assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
